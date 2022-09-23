@@ -6,6 +6,12 @@
     text-decoration: none;
 
 }
+/* Nav bar*/
+
+h1{
+    font-size:40px;
+    text-align: center;
+}
 /* hero image */
 
 .hero{
@@ -14,9 +20,4 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-h1{
-    font-size:40px;
-    text-align: center;
 }
