@@ -62,6 +62,7 @@ a:visited{
 /* Sections */
 h2{
     color: var(--accent);
+    font-size: 35px;
 }
 
 /* hero image */
