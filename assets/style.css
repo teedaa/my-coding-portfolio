@@ -1,4 +1,4 @@
-/* Universal */
+/* Universal, root, body */
 :root{
     --BGcolor: #F2F1EF;
     --headers: #697184;
@@ -32,6 +32,8 @@ header{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* nav bar*/ 
+
 nav {
     display:flex;
     justify-content: space-between;
@@ -58,13 +60,6 @@ a:visited{
     color: var(--headers);
 }
 
-
-/* Sections */
-h2{
-    color: var(--accent);
-    font-size: 35px;
-}
-
 /* hero image */
 
 .hero{
@@ -76,6 +71,24 @@ h2{
     margin-right: auto;
 }
 
+/* Sections */
+h2{
+    color: var(--accent);
+    font-size: 35px;
+}
+
+/* projects */
+
+img {
+    display: block;
+}
+
+.main_pic {
+  
+
+}
+
+/* footer */
 footer{
     text-align: center;
     font-size: small;
