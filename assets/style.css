@@ -1,23 +1,82 @@
 /* Universal */
+:root{
+    --BGcolor: #F2F1EF;
+    --headers: #697184;
+    --text: #413F3D;
+    --accent: #B1A6A4;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-
+    
 }
-/* Nav bar*/
+
+body{
+    background-color: var(--BGcolor);
+    color: var(--text);
+}
+
+/* Header */
 
 h1{
     font-size:40px;
-    text-align: center;
+    text-align: left;
+    color: var(--headers);
 }
+
+header{
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.nav_links {
+    list-style-type:none;    
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+a:link {
+    color: var(--accent);
+}
+a:hover{
+    color: white;
+}
+a:active{
+    color: var(--accent);
+}
+a:visited{
+    color: var(--headers);
+}
+
+
+/* Sections */
+h2{
+    color: var(--accent);
+}
+
 /* hero image */
 
 .hero{
     width:50%;
     height:auto;
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+footer{
+    text-align: center;
+    font-size: small;
+    color: var(--headers);
 }
