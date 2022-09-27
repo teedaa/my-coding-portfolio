@@ -15,6 +15,7 @@
 html {
     scroll-behavior: smooth;
 }
+/* Body */
 
 body {
     background-color: var(--BGcolor);
@@ -49,6 +50,8 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+
+/* link behaviors */ 
 
 a:link {
     color: var(--accent);
@@ -121,11 +124,3 @@ footer{
     color: var(--headers);
 }
 
-/* media screen */
-@media screen and (max-width: 1200px) {
- 
-
- @media screen and (max-width: 992px) {
-
-
- @media screen and (max-width: 768px) {
