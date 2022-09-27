@@ -1,12 +1,12 @@
 /* Universal, root, body */
-:root{
+:root {
     --BGcolor: #F2F1EF;
     --headers: #697184;
     --text: #413F3D;
     --accent: #B1A6A4;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,22 +14,22 @@
     
 }
 
-body{
+body {
     background-color: var(--BGcolor);
     color: var(--text);
 }
 
 /* Header */
 
-h1{
+h1 {
     font-size:40px;
     text-align: left;
     color: var(--headers);
 }
 
-header{
+header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
 }
 
 /* nav bar*/ 
@@ -45,8 +45,9 @@ nav {
     font-size: 15px;
     text-decoration: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
 a:link {
     color: var(--accent);
 }
@@ -79,14 +80,34 @@ h2{
 
 /* projects */
 
+.main-card{}
+
+.project-card{
+    display: flex;
+}
+
+.project-card:hover,
+.main-card:hover {
+    box-shadow: 0 8px 16px 0 var(--text)
+}
+
+.container {
+    padding: 2px 16px;
+}
+
 img {
     display: block;
 }
 
-.main_pic {
-    width:50%;  
-    height: auto;
+.main-pic {
+    width:45%;  
+    height: 45%;
 
+}
+
+.small-pic {
+    width: 40%;
+    height:auto;
 }
 
 /* footer */
@@ -95,3 +116,12 @@ footer{
     font-size: small;
     color: var(--headers);
 }
+
+/* media screen */
+@media screen and (max-width: 1200px) {
+ 
+
+ @media screen and (max-width: 992px) {
+
+
+ @media screen and (max-width: 768px) {
