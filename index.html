@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/reset.css"/>
-    <link rel="stylesheet" href="assets/style.css"/>
-    <title>Pengteda's Portfolio</title>
-
-</head>
-
-<body>
-    <!-- Header -->
-    <header>
-    <nav class="nav_links">
-        <h1>Hi, I'm Pengteda.</h1>
-                <a href="#about-me">About Me</a>
-                <a href="#projects">Projects</a>
-                <a href="#get-in-touch">Get in Touch</a>
-        </nav>
-    </header>
-        <!-- Hero image -->
-    <img class="hero" src="./assets/my-pic.jpg" alt="Photo of me standing next to the Lucy statue at Sonoma State University">
-
-    <!--About me-->
-<main>
-    <section id="about-me" class="about-me">
-        <h2>About Me</h2>
-        <p>My name is Pengteda Cheng, and I am located in Lake County, California. I have a Bachelor's of Arts degree in Spanish with a minor in Astronomy from Sonoma State University. I am currently enrolled in UC Berkeley's Coding Bootcamp hoping to purse a career in the programming world.</p>
-    </section>
-
-    <!--My Work-->
-    <h2>Projects</h2>
-    <section id="projects" class="projects">
-        <section>
-            <h3 class="title">Placeholder 1</h3>
-            <a href="#" target="_blank" class="project-link"><span>My Project 1</span></a>
+    <head>
+        <title>Pengteda's Portfolio</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/styles.css"/>
+    </head>
+    <body>
+        <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar navbar-light bg-light sticky-top">
+            <div class="container">
+              <a class="navbar-brand">P.C</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Me</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Hero section -->
+          <section id="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Hi,<br>I'm Pengteda.</h1>
+                        <p>My name is Pengteda Cheng, and I am located in Lake County, California. I have a Bachelor's of Arts degree in Spanish with a minor in Astronomy from Sonoma State University. I am currently enrolled in UC Berkeley's Coding Bootcamp hoping to purse a career in the programming world.</p>
+                     </div>
+                     <div class="col">
+                         <img src="./assets/my-pic.jpg" alt="Picture of me standing next to a Lucy statue">
+                     </div>
+                </div>
+                <div class="row cards">
+                    <div class="col-md-4 d-flex justify-content-center">
+                      <div class="card">
+                          <div class="card-body">
+                              <!-- here is where they add the ICON -->
+                              <img src="..." alt="..." class="icon">
+                              <h5 class="card-title">Skills</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center">
+                      <div class="card">
+                          <div class="card-body">
+                              <!-- here is where they add the ICON -->
+                              <img src="..." alt="..." class="icon">
+                              <h5 class="card-title">Experience</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center">
+                      <div class="card">
+                          <div class="card-body">
+                              <!-- here is where they add the ICON -->
+                              <img src="..." alt="..." class="icon">
+                              <h5 class="card-title">Projects</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <div class="main-card">
-            <img class="main-pic" src="./assets/placeholder.jpg" alt="placeholder image">
-        </div>
-        <section>
-        <h3 class="title">Placeholder 2</h3>
-            <a href="#" target="_blank" class="project-link"><span>My Project 2</span></a>
-        </section>
-        <div class="project-card">
-                <img class="small-pic" src="./assets/placeholder.jpg" alt="placeholder image">
-        </div>
-        <section>
-                <h3 class="title">Placeholder 3</h3>
-                <a href="#" target="_blank" class="project-link"><span>My Project 3</span></a>
-        </section>
-        <div class="project-card">
-                <img class="small-pic" src="./assets/placeholder.jpg" alt="placeholder image">
-        </div>
-    </section>
-    
-    <!--Contact-->
-
-    <section id="get-in-touch" class="get-in-touch">
-        <form>
-            <h2>Get in Touch</h2>
-            <label for="fname">Full Name</label><br>
-            <input type="text" id="fname" name="name"><br>
-            <label for="email">Email</label><br>
-            <input type="text" id="email" name="emailaddress"><br>
-            <button type="submit">Submit</button>
-        </form>
-     </section>
-</main>
-<footer>
-    <p>© Pengteda Cheng. Made with sweat and tears.</p>
-</footer>
+        <!-- Hero section ends here !-->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </body>
 </html>
